@@ -1,0 +1,248 @@
+/*
+*******************
+    GENERAL
+*******************
+*/
+
+* { /*reiniciamos todos los paddings y margins, porque los navegadores no lo dan por defecto*/
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+img{
+    width:100%;/*le estoy diciendo a cada imagen cuanto va a ocupar*/
+    height: 100%;
+}
+
+/*
+****************
+    VARIABLES
+****************
+*/
+
+:root{
+    --colorFondo: whitesmoke ;
+    --ColorTitulo: darkslategray;
+}
+
+
+
+/*
+****************
+****************
+    MOBILE
+****************
+****************
+*/
+
+/*etiquetas*/
+
+main > section{
+    display: flex;/*me permite acomodarlas una al lado de la otra*/
+    flex-wrap: wrap; /*permite el desborde, que cuando llegue al maximo de la plantalla los eleemntos empiecen a bajar*/ 
+    justify-content:center;/*alineo las imagenes en el centro*/
+    align-items: center;
+    padding: 4% 0;/*para que todas las secciones tengan un espacio*/
+}
+
+.section_title{
+    width: 100%;/*quiero que ocupe el 100 de la pantalla*/
+    text-align:center;/*alineo el texto en el centro*/
+    margin-bottom:4% ;/*el margen vertical es del 3% y el horizontal de 0*/
+    font-style: oblique;
+    font-family: 'Times New Roman', Times, serif;
+    background-color:beige;
+    color:var(--ColorTitulo);
+    text-align: center;
+    text-decoration-skip:initial;
+}
+
+.section_title:hover{
+    font-weight: bold;
+    transition: 0.1s;
+}
+
+.section_text{
+    width:90%;
+    text-align: center;
+    margin: 1% 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:justify;
+    color: darkolivegreen;
+    
+}
+
+/*
+*******************
+    Encabezado
+*******************
+*/
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar-brand{
+    font-family:'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+.navbar-brand:hover{
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+/*
+*******************
+    Carousel
+*******************
+*/
+header > .carousel{
+    height: 700px ;
+    padding-bottom: 0%;
+    padding-top: 56px;
+
+}
+header .carousel-item{
+    height: 100%;
+
+}
+header .carousel-inner{
+    height: 100%;
+
+}
+
+.carousel-item img{
+    height:100%;
+    width: 100%;   
+
+}
+
+
+/*
+*****************
+    About   
+****************
+*/
+#section__about{
+    background-color:var(--colorFondo) ;
+}
+.section_text{
+    text-align: center;
+}
+
+/*
+****************
+    servicios
+****************
+*/
+
+#section_services{
+    background-color:  var(--colorFondo);
+
+}
+
+.card-body{
+    text-align: center;
+    
+    
+}
+.card-text{
+    font-style: italic;
+}
+
+
+.card img{
+    width: 80px;
+    margin: auto;
+    height: 100px;
+    margin-top: 5%;
+}
+
+#section_services .btn{
+    background-color: rgb(156, 155, 155);
+    border-color:  rgb(156, 155, 155) ;
+    width: 60%;
+}
+#section_services .btn:hover{
+    background-color:  rgb(117, 117, 117);
+}
+
+
+/*
+*****************
+    Gallery
+****************
+*/
+
+/*id de seccion galeria*/
+#section_gallery{
+    background-color:gainsboro;
+}
+/*etiqueta de galeria*/
+.gallery_photo{
+    width: 80%;/*tamaño de la foto*/
+    height: 20hv;
+    margin-bottom: 3%;/*margen, espacio entre las fotos*/
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.90);
+}
+
+
+/*
+****************
+    CONTACTO
+****************
+*/
+#section_contact{
+    background-color: var(--colorFondo);
+}
+
+#section_contact .btn{
+    background-color: rgb(231, 229, 229);
+}
+
+
+/*
+*****************
+    FOOTER
+****************
+*/
+
+footer{
+    width: 100%;
+    height: 7vh;
+    background-color:darkgray ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+****************
+*****************
+    DESKTOP 
+****************
+****************
+*/
+
+@media(min-width: 1024px){/*desde un tamañao de 1024px comprtate de esta forma*/
+    main > section{
+        justify-content: space-around;/*space-around: divide los eleemntos en espacios iguales */
+                                        /*space-between: prioriza el espacio entre las imagenes, te distancia los objetos lo mas lejos posible*/
+    }
+    .gallery_photo{
+        width: 30%;/*tamaño de la foto*/
+        margin-bottom: 3%;/*margen, espacio entre las fotos*/
+    }
+
+    #section__about{
+        margin-bottom: -30px;
+    }
+    
+   
+    
+}
+
+

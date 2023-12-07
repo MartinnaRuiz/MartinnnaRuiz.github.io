@@ -1,0 +1,201 @@
+<!--PROYECTO FINAL
+    RUIZ MARTINA NAIQUEN-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estancia La Martina</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.min.css"><!-- Le linkie el bootstrap de css-->
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="icon" href="public/img/icono.png"><!--Le puse el icono de la pagina-->
+    
+</head>
+<body>
+    <header class="header__section">
+        <header>
+
+            <!--Codigo de Boostratp para el encabezado, los items. Uso Nervae-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Estancia La Martina</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#carouselExampleIndicators">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#section__about">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_services">Servicios</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Alojamientos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Casa</a></li>
+                            <li><a class="dropdown-item" href="#">Departamento</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Camping</a></li>
+                        </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_gallery">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section_contact">Contacto</a>
+                        </li>   
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+                </nav>
+        </header>
+        <!--Seccion Carrusel-->
+        <!-- Creo Carrusel con codigo de Bootstrap -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="public/img/casa.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/molino.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/parque.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+    
+    </header>
+    <main>
+
+        <!--Section Nosotros-->
+        <section id="section__about">
+            <h2 class="section_title">-Nosotros-</h2>
+            <p class="section_text"> Somos la cuarta generacion que sigue apostando en preservar la naturaleza mientras genera espacios de comodidad y armonía para conectarse con uno mismo.<br>
+                Atesorando historias y experiencias los invitamos a que formen parte de esta comunidad que elije el bienestar y los nuevos desafios. <br>Veni a relajar mientras aprendes la importancia del
+                cuidado de la naturaleza, a convivir con ella y valorar su presencia.  </p>
+        </section>
+
+        <!--Seccion Servicios -->
+        <section id="section_services">
+            <h2 class="section_title">- Servicios -</h2>
+            <!--Voy a Boostrap. Utilizo Card-->
+            <div class="card" style="width: 18rem;" >
+                <img src="./public/img/house.png" class="card-img-top" alt="picture">
+                <div class="card-body">
+                    <h5 class="card-title">Fotos de la Estancia</h5>
+                    <p class="card-text">Cada rincón de nuestro hogar tiene una historia que contar, vení a descubrirlo!</p>
+                    <a href="#" class="btn btn-dark">Ver más</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./public/img/goat.png" class="card-img-top" alt="picture">
+                <div class="card-body">
+                    <h5 class="card-title">Fotos de los animales</h5>
+                    <p class="card-text">En esta sección encontrarás a nuestros animales que te acompañarán durante tu estadía</p>
+                    <a href="#" class="btn btn-dark">Ver más</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img src="./public/img/canoe.png" class="card-img-top" alt="picture">
+                <div class="card-body">
+                    <h5 class="card-title">Fotos de actividades</h5>
+                    <p class="card-text">El contacto con la naturaleza es vital para nuestro bienestar y más divertido si haces ejercicio!</p>
+                    <a href="#" class="btn btn-dark" >Ver más</a>
+                </div>
+            </div>
+            </section>
+
+        <!--Seccion Galeria-->
+        <section id="section_gallery">
+            <h2 class="section_title">- Galeria -</h2>
+            <!-- Cargo imagenes-->
+            <div class="gallery_photo"><!-- porque se suele usar un contenedor para la imagen, porque las imagenes se descompaginan tienen diferentes tamaños-->
+                <img src="./public/img/picture.jpg" alt="picture">
+            </div>
+            <div class="gallery_photo">
+                <img src="./public/img/picture.jpg" alt="picture">
+            </div>
+            <div class="gallery_photo">
+                <img src="./public/img/picture.jpg" alt="picture">
+            </div>
+            <div class="gallery_photo">
+                <img src="./public/img/picture.jpg" alt="picture">
+            </div>
+            <div class="gallery_photo">
+                <img src="./public/img/picture.jpg" alt="picture">
+            </div>
+            <div class="gallery_photo">
+                <img src="./public/img/picture.jpg" alt="picture">
+            </div>
+            
+        </section>
+
+        <!--Seccion Contacto-->
+        <section id="section_contact">
+            <h2 class="section_title">-Contacto-</h2>
+            <!-- Traigo de Bootstrap codigo html para hacer el formulario-->
+            <form><!--form: formulario funcionan en combinacion-->
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Nombre: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Apellido: </label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <!--labels: son etiquetas que se les pone a esos inputs, con el for asigno el id del input al que hago referencia -->
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <!--input: son campos de entrada, y tengo tipos-->
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Confirme su email</label>
+                    <!--input: son campos de entrada, y tengo tipos-->
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check para enviar formulario</label>
+                </div>
+                <button type="submit" class="btn btn-light btn--contact">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <span>© Derechos Reservados Estancias 2023</span>
+    </footer>
+
+    <script src="./public/js/bootstrap.bundle.min.js"></script><!--Le linkie el archivo de java de Bootstrap-->
+    <script src="./public/js/main.js"></script>
+</body>
+</html>
